@@ -1,15 +1,40 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import {
+  Festive,
+  League_Script,
+  Nunito_Sans,
+  Raleway,
+  Story_Script,
+} from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const raleway = Raleway({
+  variable: "--font-raleway",
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+
+const nunitoSans = Nunito_Sans({
+  variable: "--font-nunito-sans",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const storyScript = Story_Script({
+  variable: "--font-story-script",
   subsets: ["latin"],
+  weight: ["400"],
+});
+
+const festive = Festive({
+  variable: "--font-festive",
+  subsets: ["latin"],
+  weight: ["400"],
+});
+
+const leagueScript = League_Script({
+  variable: "--font-league-script",
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -25,7 +50,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${raleway.variable} ${nunitoSans.variable} ${storyScript.variable} ${festive.variable} ${leagueScript.variable} antialiased`}
       >
         {children}
       </body>
