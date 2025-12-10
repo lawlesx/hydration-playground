@@ -15,14 +15,14 @@ const ClientHydrated = async () => {
       <h1 className="text-9xl p-5 text-dusty-rose text-shadow-mauve-mist text-shadow-lg font-storyscript mx-auto">
         Client Side Hydrated UI
       </h1>
-      <Wrapper title="Carousel">
-        <Carousel images={images} />
+      <Wrapper title="Search Bar">
+        <SearchBar />
       </Wrapper>
       <Wrapper title="Slider">
         <Slider />
       </Wrapper>
-      <Wrapper title="Search Bar">
-        <SearchBar />
+      <Wrapper title="Carousel">
+        <Carousel images={images} />
       </Wrapper>
       <Wrapper title="Modal">
         <Modal />
