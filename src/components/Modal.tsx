@@ -38,7 +38,9 @@ const Modal = () => {
             <h2 className="text-2xl font-bold mb-4 font-storyscript">
               Some Modal Title
             </h2>
-            <p className="text-gray-600 font-storyscript">Some Modal content</p>
+            <p className="text-gray-600 font-storyscript">
+              Click outside to close.
+            </p>
           </div>
         </div>
       )}
